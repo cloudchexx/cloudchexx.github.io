@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>我的第一篇博客</title>
+    <url>/2024/09/29/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<p>欢迎观看我的个人博客网页，这是我的第一篇博客。做这么一个网站的原因还是因为想促进自己的能力水平，且能够记录自己的成长，我觉得这是一件很有意义的事情，虽然应该没啥人看我的博客，但是我还是会继续写下去的。</p>
+<h2 id="博客内容"><a href="#博客内容" class="headerlink" title="博客内容"></a>博客内容</h2><p>会记录我的一些学习经历已经一些项目的开发进度和心得，还有对于一些书籍的观后感和个人总结，甚至于一些生活中的一些事吧，反正博客也是随便写不是吗？</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">CloudChexx.戈兀</span><br></pre></td></tr></table></figure>
+<h2 id="感谢"><a href="#感谢" class="headerlink" title="感谢"></a>感谢</h2><p>由于我也是个技术小白，非常fw，所以还是很感谢网上的一些文章和博主做的教程：</p>
+<p><a href="https://www.bilibili.com/video/BV1Yb411a7ty/?spm_id_from=333.880.my_history.page.click">博客搭建教程</a></p>
+]]></content>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2024/09/28/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -16,16 +26,6 @@
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>我的第一篇博客</title>
-    <url>/2024/09/29/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<p>欢迎观看我的个人博客网页，这是我的第一篇博客。做这么一个网站的原因还是因为想促进自己的能力水平，且能够记录自己的成长，我觉得这是一件很有意义的事情，虽然应该没啥人看我的博客，但是我还是会继续写下去的。</p>
-<h2 id="博客内容"><a href="#博客内容" class="headerlink" title="博客内容"></a>博客内容</h2><p>会记录我的一些学习经历已经一些项目的开发进度和心得，还有对于一些书籍的观后感和个人总结，甚至于一些生活中的一些事吧，反正博客也是随便写不是吗？</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">CloudChexx.戈兀</span><br></pre></td></tr></table></figure>
-<h2 id="感谢"><a href="#感谢" class="headerlink" title="感谢"></a>感谢</h2><p>由于我也是个技术小白，非常fw，所以还是很感谢网上的一些文章和博主做的教程：</p>
-<p><a href="https://www.bilibili.com/video/BV1Yb411a7ty/?spm_id_from=333.880.my_history.page.click">博客搭建教程</a></p>
 ]]></content>
   </entry>
 </search>
