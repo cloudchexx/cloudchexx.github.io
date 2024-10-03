@@ -1,85 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search> 
-  
-  
-    
-    <entry>
-      <title>严肃游戏开发-感悟</title>
-      <link href="/2024/09/30/%E4%B8%A5%E8%82%83%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91-%E6%84%9F%E6%82%9F/"/>
-      <url>/2024/09/30/%E4%B8%A5%E8%82%83%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91-%E6%84%9F%E6%82%9F/</url>
-      
-        <content type="html"><![CDATA[<h1 id="第一次开发项目"><a href="#第一次开发项目" class="headerlink" title="第一次开发项目"></a>第一次开发项目</h1><p>    在参加这个比赛之前，我完全没有过任何项目经历，但博主本人却又非常想参加一些项目，来获得一些开发经验，而这次的小比赛，也给了我这么一个机会。</p><p>    我们小队一共四个人，但全都是大一新生，完全没有任何项目经验，所以在开头初期就处处碰壁，到开发后阶段更是如此。但这也是我第一个项目，所以我打算把此中获得的经验记录下来。</p><h2 id="需求分析很重要"><a href="#需求分析很重要" class="headerlink" title="需求分析很重要"></a>需求分析很重要</h2><p>    这是我想说的第一点，也是最关键的一点。大学上课期间我们的都有软件工程这么一门课，但似乎大家都不清楚这门课的作用在哪里，对未来工作有什么作用，我想说的是，这也许对你写代码并没有任何帮助，但是这门课对于整个开发过程来说极为重要。最主要的是，可行分析和需求分析。在完成这两项之后才能做详细设计。这是为了整个项目打地基。能够帮助我们规避掉大部分的后期问题，例如模块契合不周，开发末期发现底层设计有问题。</p><p>    这些问题都是一等一的大麻烦。特别是到了后期阶段，解决这些BUG会非常困难。我们的<a href=""></a>游戏也是在这一点上有很大的问题，在开发周期，尽管我们制定了一个开发计划，但执行过程并不理想，很多模块功能是我们想到啥就加啥。</p><p>    这样子的设计问题到后期就使得我们吃了大亏，看不懂彼此的设计和代码，还有在打包测试阶段，有个极其恶性的BUG发生了，无限的虚函数调用使得游戏崩溃，而我们在测试了整整两天之后才弄明白有可能是因为设计底层时异步缓存之类的清楚有问腿，但那个时候想改已经是不太可能的了，所以我们花了很多时间才使得这个BUG触发概率变小而不是解决。</p><h2 id="敏捷开发"><a href="#敏捷开发" class="headerlink" title="敏捷开发"></a>敏捷开发</h2><p>    对于一个产品来说，及时形成一个初步的形态是至关重要的，所以我们不应该才开发初期花费一大段的时间去做框架。我们应该更快的形成一个基础，一个平台，这样不仅可以快速开发，也能更快速契合需求和增加后续的测试时间。</p><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>    整体来说，我对我们本次的开发还算是很满意的，不论作品结局如何，我们都从中学到了不少开发经验，为了我们下一个项目做准备。在此我也要感谢在网上发布UE5免费教程的博主，和各位论坛的大佬，没有他们的贡献我们也是很难完成这个项目的，再次我要郑重的感谢他们。</p><h2 id="参考教程"><a href="#参考教程" class="headerlink" title="参考教程"></a>参考教程</h2><p><a href="https://www.bilibili.com/video/BV1n2421T78A/"># 虚幻引擎倾囊相授计划：2D像素俯视视角游戏教程第一期_UnrealEngine_TopDown_UE5_虚幻5_Roguelike</a></p><p><a href="%5B%E3%80%90UE5GitHub%E3%80%91%E4%BD%BF%E7%94%A8GitHub%E7%AE%A1%E7%90%86%E8%99%9A%E5%B9%BB%E9%A1%B9%E7%9B%AE_%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9_bilibili%5D(https://www.bilibili.com/video/BV1eC4y1e7hc/?vd_source=d28b80235dd33a7ae898c8c93e9846aa)"># 【UE5GitHub】使用GitHub管理虚幻项目</a></p>]]></content>
-      
-      
+<search>
+  <entry>
+    <title>Niko,最长的河</title>
+    <url>/2024/09/30/Niko-%E6%9C%80%E9%95%BF%E7%9A%84%E6%B2%B3/</url>
+    <content><![CDATA[<h1 id="夸父不是因为摸到太阳而受到敬仰"><a href="#夸父不是因为摸到太阳而受到敬仰" class="headerlink" title="夸父不是因为摸到太阳而受到敬仰"></a>夸父不是因为摸到太阳而受到敬仰</h1>]]></content>
       <categories>
-          
-          <category> 项目 </category>
-          
-          <category> 严肃游戏开发 </category>
-          
+        <category>CS</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> UE5 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Niko,最长的河</title>
-      <link href="/2024/09/30/Niko-%E6%9C%80%E9%95%BF%E7%9A%84%E6%B2%B3/"/>
-      <url>/2024/09/30/Niko-%E6%9C%80%E9%95%BF%E7%9A%84%E6%B2%B3/</url>
-      
-        <content type="html"><![CDATA[<h1 id="夸父不是因为摸到太阳而受到敬仰"><a href="#夸父不是因为摸到太阳而受到敬仰" class="headerlink" title="夸父不是因为摸到太阳而受到敬仰"></a>夸父不是因为摸到太阳而受到敬仰</h1>]]></content>
-      
-      
+      <tags>
+        <tag>游戏</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>严肃游戏开发-感悟</title>
+    <url>/2024/09/30/%E4%B8%A5%E8%82%83%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91-%E6%84%9F%E6%82%9F/</url>
+    <content><![CDATA[<h1 id="第一次开发项目"><a href="#第一次开发项目" class="headerlink" title="第一次开发项目"></a>第一次开发项目</h1><p>    在参加这个比赛之前，我完全没有过任何项目经历，但博主本人却又非常想参加一些项目，来获得一些开发经验，而这次的小比赛，也给了我这么一个机会。</p>
+<p>    我们小队一共四个人，但全都是大一新生，完全没有任何项目经验，所以在开头初期就处处碰壁，到开发后阶段更是如此。但这也是我第一个项目，所以我打算把此中获得的经验记录下来。</p>
+<h2 id="需求分析很重要"><a href="#需求分析很重要" class="headerlink" title="需求分析很重要"></a>需求分析很重要</h2><p>    这是我想说的第一点，也是最关键的一点。大学上课期间我们的都有软件工程这么一门课，但似乎大家都不清楚这门课的作用在哪里，对未来工作有什么作用，我想说的是，这也许对你写代码并没有任何帮助，但是这门课对于整个开发过程来说极为重要。最主要的是，可行分析和需求分析。在完成这两项之后才能做详细设计。这是为了整个项目打地基。能够帮助我们规避掉大部分的后期问题，例如模块契合不周，开发末期发现底层设计有问题。</p>
+<p>    这些问题都是一等一的大麻烦。特别是到了后期阶段，解决这些BUG会非常困难。我们的<a href=""></a>游戏也是在这一点上有很大的问题，在开发周期，尽管我们制定了一个开发计划，但执行过程并不理想，很多模块功能是我们想到啥就加啥。</p>
+<p>    这样子的设计问题到后期就使得我们吃了大亏，看不懂彼此的设计和代码，还有在打包测试阶段，有个极其恶性的BUG发生了，无限的虚函数调用使得游戏崩溃，而我们在测试了整整两天之后才弄明白有可能是因为设计底层时异步缓存之类的清楚有问腿，但那个时候想改已经是不太可能的了，所以我们花了很多时间才使得这个BUG触发概率变小而不是解决。</p>
+<h2 id="敏捷开发"><a href="#敏捷开发" class="headerlink" title="敏捷开发"></a>敏捷开发</h2><p>    对于一个产品来说，及时形成一个初步的形态是至关重要的，所以我们不应该才开发初期花费一大段的时间去做框架。我们应该更快的形成一个基础，一个平台，这样不仅可以快速开发，也能更快速契合需求和增加后续的测试时间。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>    整体来说，我对我们本次的开发还算是很满意的，不论作品结局如何，我们都从中学到了不少开发经验，为了我们下一个项目做准备。在此我也要感谢在网上发布UE5免费教程的博主，和各位论坛的大佬，没有他们的贡献我们也是很难完成这个项目的，再次我要郑重的感谢他们。</p>
+<h2 id="参考教程"><a href="#参考教程" class="headerlink" title="参考教程"></a>参考教程</h2><p><a href="https://www.bilibili.com/video/BV1n2421T78A/"># 虚幻引擎倾囊相授计划：2D像素俯视视角游戏教程第一期_UnrealEngine_TopDown_UE5_虚幻5_Roguelike</a></p>
+<p><a href="%5B%E3%80%90UE5GitHub%E3%80%91%E4%BD%BF%E7%94%A8GitHub%E7%AE%A1%E7%90%86%E8%99%9A%E5%B9%BB%E9%A1%B9%E7%9B%AE_%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9_bilibili%5D(https://www.bilibili.com/video/BV1eC4y1e7hc/?vd_source=d28b80235dd33a7ae898c8c93e9846aa)"># 【UE5GitHub】使用GitHub管理虚幻项目</a></p>
+]]></content>
       <categories>
-          
-          <category> CS </category>
-          
+        <category>项目</category>
+        <category>严肃游戏开发</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 游戏 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>我的第一篇博客</title>
-      <link href="/2024/09/29/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
-      <url>/2024/09/29/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
-      
-        <content type="html"><![CDATA[<p>欢迎观看我的个人博客网页，这是我的第一篇博客。做这么一个网站的原因还是因为想促进自己的能力水平，且能够记录自己的成长，我觉得这是一件很有意义的事情，虽然应该没啥人看我的博客，但是我还是会继续写下去的。</p><h2 id="博客内容"><a href="#博客内容" class="headerlink" title="博客内容"></a>博客内容</h2><p>会记录我的一些学习经历已经一些项目的开发进度和心得，还有对于一些书籍的观后感和个人总结，甚至于一些生活中的一些事吧，反正博客也是随便写不是吗？</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">CloudChexx.戈兀</span><br></pre></td></tr></table></figure><h2 id="感谢"><a href="#感谢" class="headerlink" title="感谢"></a>感谢</h2><p>由于我也是个技术小白，非常fw，所以还是很感谢网上的一些文章和博主做的教程：</p><p><a href="https://www.bilibili.com/video/BV1Yb411a7ty/?spm_id_from=333.880.my_history.page.click">博客搭建教程</a></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hello World</title>
-      <link href="/2024/09/28/hello-world/"/>
-      <url>/2024/09/28/hello-world/</url>
-      
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-  
-  
+      <tags>
+        <tag>UE5</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>我的第一篇博客</title>
+    <url>/2024/09/29/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<p>欢迎观看我的个人博客网页，这是我的第一篇博客。做这么一个网站的原因还是因为想促进自己的能力水平，且能够记录自己的成长，我觉得这是一件很有意义的事情，虽然应该没啥人看我的博客，但是我还是会继续写下去的。</p>
+<h2 id="博客内容"><a href="#博客内容" class="headerlink" title="博客内容"></a>博客内容</h2><p>会记录我的一些学习经历已经一些项目的开发进度和心得，还有对于一些书籍的观后感和个人总结，甚至于一些生活中的一些事吧，反正博客也是随便写不是吗？</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">CloudChexx.戈兀</span><br></pre></td></tr></table></figure>
+<h2 id="感谢"><a href="#感谢" class="headerlink" title="感谢"></a>感谢</h2><p>由于我也是个技术小白，非常fw，所以还是很感谢网上的一些文章和博主做的教程：</p>
+<p><a href="https://www.bilibili.com/video/BV1Yb411a7ty/?spm_id_from=333.880.my_history.page.click">博客搭建教程</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2024/09/28/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>数据库基础</title>
+    <url>/2024/10/03/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%9F%BA%E7%A1%80/</url>
+    <content><![CDATA[<p>最近学习了数据库概论，所以把在网上搜到的知识点一些知识点和语法内容题解写在这里，防止忘记。</p>
+<h1 id="基础语法"><a href="#基础语法" class="headerlink" title="基础语法"></a>基础语法</h1><p>基础查询语法：<a href="%5BMySQL%E5%B8%B8%E7%94%A8%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95_mysql%E7%9A%84%E8%AF%AD%E6%B3%95-CSDN%E5%8D%9A%E5%AE%A2%5D(https://blog.csdn.net/qq_36969257/article/details/81364113)">MySQL基础语法</a></p>
+<h1 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h1><p>[主键自增长](<a href="https://blog.csdn.net/Itmastergo/article/details/130260568">MySQL数据库——MySQL AUTO_INCREMENT：主键自增长_mysql主键自动增长-CSDN博客</a>)</p>
+<p>[实现排名函数](<a href="https://blog.csdn.net/u011726005/article/details/94592866">MYSQL实现排名函数RANK，DENSE_RANK和ROW_NUMBER_mysql dense rank-CSDN博客</a>)</p>
+<p>[窗口函数](<a href="https://blog.csdn.net/weixin_46009162/article/details/108426207">sql思路解析，窗口函数_create function getnthhighestsalary(n int) returns-CSDN博客</a>)</p>
+]]></content>
+      <categories>
+        <category>数据库</category>
+      </categories>
+      <tags>
+        <tag>MySQL</tag>
+      </tags>
+  </entry>
 </search>
