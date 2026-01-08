@@ -62,7 +62,7 @@
   <link rel="stylesheet" href="../../../../css/mermaid.css">
 
   <link rel="stylesheet" href="../../../../css/vs-code.css">
-  <link rel="stylesheet" href="../../../../css/post.css?v=1767422860631">
+  <link rel="stylesheet" href="../../../../css/post.css?v=1767853498123">
   <link rel="stylesheet" href="../../../../css/tag.css">
   <link rel="stylesheet" href="../../../../css/categories.css">
   <link rel="stylesheet" href="../../../../css/archive.css">
@@ -182,7 +182,7 @@
         <span>目录</span>
       </div>
       <div class="section-content">
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0%E8%8A%82"><span class="toc-text">第一章节</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E8%8A%82-%EF%BC%881-3%E7%AB%A0%EF%BC%89"><span class="toc-text">第一节 （1-3章）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-1%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86"><span class="toc-text">1.1基础知识</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-2%E5%AF%84%E5%AD%98%E5%99%A8"><span class="toc-text">1.2寄存器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-3-%E4%BB%8E%E5%86%85%E5%AD%98%E8%AE%BF%E9%97%AE%E4%BA%86%E8%A7%A3%E5%AF%84%E5%AD%98%E5%99%A8"><span class="toc-text">1.3 从内存访问了解寄存器</span></a></li></ol></li></ol>
       </div>
     </div>
 
@@ -256,7 +256,41 @@
         </div>
         
         <div class="post-body vscode-markdown">
-          <h1 id="第一章节"><a href="#第一章节" class="headerlink" title="第一章节"></a>第一章节</h1>
+          <p>参考《汇编语言》-王爽第三版</p>
+<h1 id="第一节-（1-3章）"><a href="#第一节-（1-3章）" class="headerlink" title="第一节 （1-3章）"></a>第一节 （1-3章）</h1><h2 id="1-1基础知识"><a href="#1-1基础知识" class="headerlink" title="1.1基础知识"></a>1.1基础知识</h2><p> 过一遍概念，有些会在计组和操作系统里面讲得深一些。</p>
+<p>汇编语言是直接工作在硬件之上的编程语言，确切来说，汇编语言是直接操控寄存器和内存来达到控制CPU。所以最重要的硬件部分就是寄存器。</p>
+<p>机器语言是机器指令集合，是一组二进制数据的集合(转化为一组高低电平信号集合)，直接操控CPU。</p>
+<p>汇编语言就是为了方便记忆机器语言而形成的书写格式，由汇编编译器编译为机器语言。 由于机器语言指令集会根据计算机设计架构而不同，所以每个机器的汇编指令也会有所不同这是由硬件决定的。</p>
+<p>指令和数据都是二进制的信息，CPU会根据不同的标准区分这些信息是数据还是指令。</p>
+<p>存储单元，这个看具体机器，记住单位就行8bit &#x3D; 1Byte ，字长由机器决定。</p>
+<p>CPU对存储器读写，了解三根总线：地址总线，数据总线，控制总线。地址总线位数决定CPU寻址能力（也就是内存空间的大小），数据总线位数决定了CPU与其他器件进行数据传送时一次数据传输量。（CPU一次计算多少位，寄存器一次存储多少位，一次数据传输最多能传几位，决定CPU是多少位计算机），控制总线位数决定了CPU对其他器件的控制能力。</p>
+<p>内存地址空间，这个比较重要。建议看书。</p>
+<h2 id="1-2寄存器"><a href="#1-2寄存器" class="headerlink" title="1.2寄存器"></a>1.2寄存器</h2><p>汇编程序就是改变各种寄存器的内容从而实现对CPU的控制。</p>
+<p>由于课本介绍的是8086CPU，不同CPU和其计算机系统的组成不同，所以寄存器的表示也就不同。所以我们只学习寄存器的基本只是和了解寄存器和CPU之间的如何互相作用即可。</p>
+<p>字在寄存器存储，看字长，如果寄存器16位，字长是2字节，那么就可以分为一个寄存器就可分为两个寄存器使用，高位寄存器和低位寄存器。</p>
+<p>1.通用寄存器：暂存数据，指令多可以。</p>
+<p>逻辑地址到物理地址：我们编写程序，不管是指令还是数据，在程序都是相对地址（逻辑地址），就是起始地址都是0。但是计算机的内存空间是有限的，我们得找到对应的物理地址才能进行内存的读写访问。</p>
+<p>只介绍下基于段地址+偏移地址的物理地址的寻址方式的本质含义，后续可能还会有什么基于页+偏移，段页结合等等内存管理方式。</p>
+<p>本质上就是给定一个基础地址（在物理地址中是确定的），让其在这个基础上加上相对地址就能得到真实地址。</p>
+<p>这里要了解下段的概念，段是人为的抽象，计算机本身不会把内存分段。而是我们根据自身的管理需要求而设置的段。段长由偏移地址的位数决定。段地址的决定由机器的位数的决定。这一块是比较重的，可以看书了解。</p>
+<p>2.段寄存器：字面意思，就是专门存储段地址，为了寻址服务的寄存器。</p>
+<p>CS，IP是两个重要的寄存器，其中CS是段寄存器，IP不是段寄存器，但其是专门和CS搭配，存储偏移地址的寄存器。前面我们说了，都是二进制信息，那些可以被视为指令，那些又被视为数据？现在我们可以说，呗CS：IP指向的信息，就是指令。然后其CS：IP的工作原理和计算机组成原理的CPU里面PC寄存器一致。IP会自动指向下一指令的地址。</p>
+<p>修改CS，IP寄存器的内容就不能使用mov这类的传送指令了。只能使用jmp的跳转指令。</p>
+<p>代码段，人为设置的段和前面的段的理解一致。</p>
+<h2 id="1-3-从内存访问了解寄存器"><a href="#1-3-从内存访问了解寄存器" class="headerlink" title="1.3 从内存访问了解寄存器"></a>1.3 从内存访问了解寄存器</h2><p>之前我们了解寄存器都是给寄存器设置了值，然后了解如何指向指令。但是不管是数据还是指令，这些一开始都不是在寄存器本身的，他们先是从外存载入内存，然后传入寄存器才能CPU执行。我们就了解些寄存器如何和内存做信息的读取写入。</p>
+<p>首先，我们先了解，内存如何存储一个字。一个字的字长由CPU机器位数决定，一个内存单元通常是一个字节，所以一个字一般就不能够使用一个存储单元完全存住。所以我们就需要字单元的概念，例如字长16位，那么就可以分为高字节和低字节两个部分，一个字就存储在两个连续的存储单元里，注意是要连续的。其中地址高的就存储高字节，地址低的就存储低字节。例如2，3单元存储一个字，那么这个字单元就是2地址开始，称之为2地址字单元。</p>
+<p>介绍一个段寄存器：DS。我们前面了解到要访问一个内存就要获得一个物理地址，物理地址由段地址+偏移地址给出。很自然，寄存器访问一个内存就得需要这两个部分。段地址自然由段寄存器存储。负责这个的段寄存器就是DS，我们先对DS预设我们需要段地址，使用传送指令就能从内存单元中读取数据到寄存器了，代码如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">mov ax 1000H<br>mov ds ax  // 8086CPU只能这样给给DS设置地址，不能直接 mov ds 1000H 这是CPU自身问题<br><br>mov ax [0001H] // 将1000H:0001H 地址的字单元读入ax寄存器之中<br><br>// [address] []表示访问内存，其中的address就是偏移地址，CPU执行这条指令会自动去DS寄存器读段地址组成1000H:0001H地址转成物理地址的。<br></code></pre></td></tr></table></figure>
+
+<p>这个过程要注意寄存器的位数，如果我们是这样的</p>
+<p>mov ah [0001H]，那么就不会读取一个字过来，而是读取这个地址存的字节。</p>
+<p>数据段，也是人为设置，和前面的代码段一致。</p>
+<p>栈，这是一个重要的数据结构。我们不讨论数据结构本身，我们我只讲在栈在内存的实现以及寄存器如何使用内存中的栈。这个部分挺重要的建议看书，书上还有图文可看。</p>
+<p>栈得满足后进先出，那么就必须要有一个标志位指向栈顶元素的地址，我们才能使用栈。8086CPU对栈的能存储的一个元素就是一个字，给出了push入栈，pop出栈两指和SS，SP两个寄存器实现栈机制。</p>
+<p>SS是段寄存器，SP是偏移地址寄存器，SS：SP指向的就是栈顶的地址。当栈为空时，SP的值如何设置，这个和无符号数的取模运算有关。可以自己了解。</p>
+<p>push和pop本质也是传送指令，与mov一样，对象不止寄存器，也可是某一个内存地址（与DS,[]搭配使用）</p>
+<p>栈段，这个就很关键，后续理解程序运行时就是这个栈段。但本质也然后和前面数据段，代码段无区别，依然是人为逻辑上的划分，CPU本身并不会划分这样的段。</p>
+
         </div>
         
         <!-- 文章导航 - 只在同分类有多篇文章时显示 -->
@@ -368,7 +402,7 @@
     </div>
     <div class="status-item">
       <i class="fas fa-clock"></i>
-      2026-01-03
+      2026-01-08
     </div>
     <div class="status-item">
       Designed By&nbsp; <a href="https://github.com/B143KC47" target="_blank"> BlackCat</a>
@@ -452,7 +486,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     // Search i18n strings
     search_placeholder: "输入关键词搜索...",
     search_no_results: "未找到相关结果",
-    search_result: "نتيجة",
+    search_result: "resultado",
     search_results: "搜索结果",
     search_results_found: "找到 undefined 个结果",
     search_in: "搜索范围",
@@ -497,7 +531,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 <script src="../../../../js/search.js"></script>
 <script src="../../../../js/theme-switch.js"></script>
 
-<script src="../../../../js/password-protect.js?v=1767422860632"></script>
+<script src="../../../../js/password-protect.js?v=1767853498123"></script>
 
     <script>
       // 移动端菜单切换
